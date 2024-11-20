@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Feature</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="heading">Welcome to Zephyrus Engineering!</h1>
+  <button id="changeTextButton">Change Heading</button>
+
+  <script>
+    document.getElementById('changeTextButton').addEventListener('click', () => {
+      document.getElementById('heading').textContent = "Heading Changed!";
+    });
+  </script>
+</body>
+</html>
